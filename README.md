@@ -19,7 +19,8 @@
 - plotting the loss and accuracy curve against different epochs for the test and train set.
 
 ## we shall see the results and analysis of the model in every step 
-### Network 1. 
+### Step 1
+### Network  
 ```python
 class Net(nn.Module):
     def __init__(self):
@@ -183,6 +184,7 @@ Let us build another network to improve our results.
 #### Target
 - Reduce the number of parameters to less than 10K
 - Reduce the overfitting model by adding dropout and increase efficiency by adding batchnorm.
+
 #### Defined network
 ``` python
 class Net(nn.Module):
@@ -260,6 +262,7 @@ class Net(nn.Module):
         return F.log_softmax(x, dim=-1)
 ```
 #### Train and Test Accuracy obtained for diffetent epochs
+
 EPOCH: 0
   0%|          | 0/469 [00:00<?, ?it/s]/usr/local/lib/python3.7/dist-packages/torch/utils/data/dataloader.py:481: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
   cpuset_checked))
@@ -342,6 +345,8 @@ Test set: Average loss: 0.0266, Accuracy: 9920/10000 (99.20%)
 - Best Training Accuracy: 99.28
 - Best Test Accuracy: 99.20 
 #### Analysis
+- The model has now lesser number of parameters 
+-Initially the model was underfitting then it started overfitting hence we can optimise our network to have a slightly underfitting network as we cannot train harder over this model.
 
 ## Step 3.
 #### Target:
@@ -421,6 +426,7 @@ class Net(nn.Module):
         return F.log_softmax(x, dim=-1)
 
 #### Train and Test Accuracy obtained for diffetent epochs
+
 EPOCH: 0
   0%|          | 0/469 [00:00<?, ?it/s]/usr/local/lib/python3.7/dist-packages/torch/utils/data/dataloader.py:481: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
   cpuset_checked))
@@ -578,17 +584,20 @@ class Net(nn.Module):
 
     x = x.view(-1,10)
     return F.log_softmax(x, dim=-1)
+
 #### Model Summary
+
 Total params: 7,752
 Trainable params: 7,752
 Non-trainable params: 0
-----------------------------------------------------------------
+
 Input size (MB): 0.00
 Forward/backward pass size (MB): 0.59
 Params size (MB): 0.03
 Estimated Total Size (MB): 0.62
 
 #### Train and Test Accuracy obtained for diffetent epochs
+
 EPOCH: 0
   0%|          | 0/469 [00:00<?, ?it/s]/usr/local/lib/python3.7/dist-packages/torch/utils/data/dataloader.py:481: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
   cpuset_checked))
@@ -669,8 +678,8 @@ Test set: Average loss: 0.0225, Accuracy: 9922/10000 (99.22%)
 
 #### Resuts:
 - Parameters : 7752
-- Best Training Accuracy: 99.18%
-- Best Test Accuracy: 99.21%
+- Best Training Accuracy: 99.22%
+- Best Test Accuracy: 99.22%
 
 #### Analysis:
 - we observe that our model is good but there is a scope of improvement as it is under fitting and hence we can increase the capacity a little more and add rotation transformation and LR Scheduler
