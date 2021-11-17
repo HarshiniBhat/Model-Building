@@ -800,9 +800,9 @@ This model is a good model as we have reached an accuracy of 99.55% with less th
 ---------------------
 | Model | Statistics | Analysis|
 |---| ---|---|
-|Model 1: The Basic Skeleton | <Li> Total Parameters : 7.3k
-                               <Li> Training Acc : 98.58%  
-                              <Li> Training Loss : 0.01337
-                              <Li> Test Acc : 98.66% 
-                                <Li> Test Loss : 0.0464 | 
+|Model 1: The Basic Skeleton | <Li> Total Parameters : 7.3k |
+|                            | <Li> Training Acc : 98.58% | 
+|                            |<Li> Training Loss : 0.01337|
+|                            | <Li> Test Acc : 98.66% |
+|                             |  <Li> Test Loss : 0.0464 | 
 |---|---|---|
