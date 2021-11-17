@@ -800,5 +800,5 @@ This model is a good model as we have reached an accuracy of 99.55% with less th
 ---------------------
 | Model | Statistics | Analysis|
 |---| ---|---|
-|with bn | parameters | have|
+|with bn | <Li> parameters | have|
 
