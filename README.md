@@ -796,5 +796,9 @@ Test set: Average loss: 0.0165, Accuracy: 9955/10000 (99.55%)
 
 This model is a good model as we have reached an accuracy of 99.55% with less than 10K parameters. 
 
-
+## Model Comparision Table
+---------------------
+| Model | Statistics | Analysis|
+|---| ---|---|
+|with bn | parameters | have|
 
