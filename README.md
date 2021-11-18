@@ -800,9 +800,9 @@ This model is a good model as we have reached an accuracy of 99.55% with less th
 ---------------------
 | Model | Statistics | Analysis|
 |---| ---|---|
-|Model 1: The Basic Skeleton | <Li> Total Parameters : 7.3k |
-|                            | <Li> Training Acc : 98.58% | 
-|                            |<Li> Training Loss : 0.01337|we see the number of parameters is too high for our model.|
-|                            | <Li> Test Acc : 98.66% | As train Accuracy is more than test accuracy for a significant number of epochs
+|Model 1: The Basic Skeleton | <Li> Total Parameters : >6M |we see the number of parameters is too high for our model.|
+|                            | <Li> Training Acc : 99.99% | As train Accuracy is more than test accuracy for a significant number of epochs|
 |                             |<Li> Test Loss : 0.0464 |  we can observe that our model is overfitting.|   
-|---|---|---|
+|Model 2: Reducing parameters + BN + Dropout | | <Li> Total Parameters : >6M |we see the number of parameters is too high for our model.|
+|                                              | <Li> Training Acc : 99.99% | As train Accuracy is more than test accuracy for a significant number of epochs|
+|                                               |<Li> Test Loss : 0.0464 |
