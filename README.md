@@ -802,7 +802,18 @@ This model is a good model as we have reached an accuracy of 99.55% with less th
 |---| ---|---|
 |Model 1: The Basic Skeleton | <Li> Total Parameters : >6M |we see the number of parameters is too high for our model.|
 |                            | <Li> Training Acc : 99.99% | As train Accuracy is more than test accuracy for a significant number of epochs|
-|                             |<Li> Test Loss : 0.0464 |  we can observe that our model is overfitting.|   
-|Model 2: Reducing parameters + BN + Dropout | | <Li> Total Parameters : >6M |we see the number of parameters is too high for our model.|
-|                                              | <Li> Training Acc : 99.99% | As train Accuracy is more than test accuracy for a significant number of epochs|
-|                                               |<Li> Test Loss : 0.0464 |
+|                             |<Li> Best Test Accuracy: 99.30% |  we can observe that our model is overfitting.|   
+|Model 2: Reducing parameters + BN + Dropout | | <Li> Total Parameters : 9950 |we see the number of parameters is reduced|
+|                                              | <Li> Training Acc : 99.28% | As train Accuracy is slightly more than test accuracy for a significant number of epochs|
+|                                               |<Li> Best Test Accuracy: 99.20% |The model is overfitting slightly
+Model 3: Adding GAP  | | <Li> Total Parameters : 5050 |
+|                      | <Li> Training Acc : 97.84% | Although accuracy has dropped but the model is doing good as with less parameters we can achieve such accuracy|
+|                      |<Li> Best Test Accuracy : 98.33% |
+Model 4: Adding more layers and increasing the capacity| | <Li> Total Parameters :7752 |
+|                                              | <Li> Training Acc : 99.22% | The model seems good but there is scope for improvement.|
+|                                               |<Li> Best Test Accuracy : 99.22 |
+Model 5: Data Argumentation + LR | | <Li> Parameters : 7752|
+|                            | <Li>Best Training Accuracy: 99.18% |
+|                             | <Li>Best Test Accuracy: 99.55% | We have built a good model with required accuracy|
+
+
